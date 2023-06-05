@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-by-capital-pages',
@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ByCapitalPagesComponent implements OnInit {
+export class ByCapitalPagesComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public searchByCapital( term: string ):void {
+    console.log('Desde ByCapitalPage');
+    console.log({ term });
   }
 
 }
