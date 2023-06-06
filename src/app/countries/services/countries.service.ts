@@ -16,7 +16,6 @@ export class CountriesService {
         catchError( () => of([]) ),
         delay( 2000 ),
       )
-
   }
 
   searchCountryByAlphaCode( code: string ): Observable<Country | null> {
